@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Policy</title>
+  <style type="text/css">
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #f5f1ec;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2e2e2e;
+    padding-bottom: 60px;
+  }
+
+  .header {
+    background: linear-gradient(to bottom, #9a2e2e, #611427);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInDown 1s ease-out;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 200%;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+  }
+
+  .anchor-links {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .anchor-links a {
+    display: inline-block;
+    margin: 6px 8px;
+    padding: 10px 22px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 2px solid #ffe8e8;
+    color: #611427;
+    font-weight: bold;
+    font-size: 90%;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .anchor-links a:hover {
+    background-color: #611427;
+    color: #ffffff;
+    border-color: #611427;
+  }
+
+  .section {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border: 1px solid #e0dcd7;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(97, 20, 39, 0.1);
+    padding: 30px;
+    animation: fadeInUp 1.5s ease;
+  }
+
+  .section-title {
+    font-size: 160%;
+    font-family: 'Garamond', serif;
+    color: #611427;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .section-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    display: table;
+  }
+
+  .section-content ul li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 8px;
+    font-size: 100%;
+    text-align: center;
+  }
+
+  .section-content ul li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #611427;
+    font-weight: bold;
+  }
+
+  .back-to-top {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .back-to-top a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 18px;
+    border: 2px solid #611427;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #611427;
+    font-size: 85%;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .back-to-top a:hover {
+    background-color: #611427;
+    color: #ffffff;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .btn-nav {
+    padding: 12px 30px;
+    font-size: 90%;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid #611427;
+    background-color: #ffffff;
+    color: #611427;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .btn-nav:hover {
+    background-color: #611427;
+    color: #ffffff;
+  }
+
+  .back-to-top {
+      position: fixed;
+      bottom: 80px;
+      right: 25px;
+      text-decoration: none;
+      font-size: 22px;
+      background-color: #611427;
+      color: #ffffff;
+      padding: 10px 15px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s, transform 0.3s;
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      background-color: #9a2e2e;
+      transform: scale(1.1);
+    }
+
+  .disclaimer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eae5e0;
+    color: #555555;
+    font-size: 75%;
+    text-align: center;
+    padding: 10px 15px;
+    border-top: 1px solid #cccccc;
+    z-index: 999;
+    font-style: italic;
+  }
+
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="header" id="top">
+    <h1>POLICY</h1>
+  </div>
+
+  <div class="anchor-links">
+    <a href="#ordering">Ordering & Delivery</a>
+    <a href="#returns">Returns & Refunds</a>
+    <a href="#privacy">Privacy & Data</a>
+    <a href="#general">General</a>
+  </div>
+
+  <div class="section" id="ordering">
+    <div class="section-title">Ordering & Delivery</div>
+    <div class="section-content">
+      <ul>
+        <li>Payments are to be made in full prior to shipment. We accept major payment methods.</li>
+        <li>Carry N Go is not responsible for delays caused by courier services or external factors.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" id="returns">
+    <div class="section-title">Returns & Refunds</div>
+    <div class="section-content">
+      <ul>
+        <li>Return requests must be submitted within 7 days of receiving the product, subject to terms.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" id="privacy">
+    <div class="section-title">Privacy & Data</div>
+    <div class="section-content">
+      <ul>
+        <li>All user data submitted is kept confidential and used only for order processing purposes.</li>
+      </ul>
+    </div>
+    </div>
+
+  <div class="section" id="general">
+    <div class="section-title">General</div>
+    <div class="section-content">
+      <ul>
+        <li>All product images shown are for illustration purposes only and may not be an exact representation.</li>
+        <li>We reserve the right to amend these terms at any time without prior notice.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <a href="termsconditions.html" class="btn-nav">← Back</a>
+    <a href="maps.html" class="btn-nav">Next →</a>
+  </div>
+
+  <a href="#" class="back-to-top" title="Back to Top">↑</a>
+
+  <div class="disclaimer-fixed">
+    Disclaimer: This website is not the official website of Carry N Go. This website was developed for the purpose of learning XHTML & CSS only.
+  </div>
+
+</body>
+</html>
