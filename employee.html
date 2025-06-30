@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Our Employee</title>
+  <style type="text/css">
+    body {
+      background-color: #f5f1ec;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-bottom: 60px;
+    }
+
+    .header {
+      background: linear-gradient(to bottom, #9a2e2e, #611427);
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 200%;
+      font-family: 'Georgia', serif;
+      letter-spacing: 2px;
+    }
+
+    .content-box {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px 20px;
+      background-color: #ffffff;
+      border: 1px solid #e0dcd7;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(97, 20, 39, 0.08);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .employee-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .employee-card {
+      background-color: #fefcfb;
+      border: 1px solid #ccc0b5;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 220px;
+      animation: fadeInUp 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    .employee-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .employee-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #611427;
+      margin-bottom: 12px;
+    }
+
+    .employee-card h3 {
+      margin: 10px 0 5px 0;
+      font-size: 105%;
+      color: #611427;
+    }
+
+    .employee-card p {
+      margin: 0;
+      color: #444444;
+      font-size: 95%;
+    }
+
+     
+    .btn-section {
+      display: inline-block;
+      margin: 20px 15px;
+      padding: 14px 30px;
+      font-size: 100%;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      border: 2px solid #611427;
+      background-color: #ffffff;
+      color: #611427;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-section:hover {
+      background-color: #611427;
+      color: #ffffff;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .btn-nav {
+      padding: 12px 30px;
+      font-size: 90%;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      border: 2px solid #611427;
+      background-color: #ffffff;
+      color: #611427;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .btn-nav:hover {
+      background-color: #611427;
+      color: #ffffff;
+    }
+
+
+    .disclaimer-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #eae5e0;
+      color: #555555;
+      font-size: 75%;
+      text-align: center;
+      padding: 10px 15px;
+      border-top: 1px solid #cccccc;
+      z-index: 999;
+      font-style: italic;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>OUR EMPLOYEE</h1>
+  </div>
+  
+  <div class="content-box">
+  <div class="employee-row">
+  <div class="employee-card">
+    <img src="iqma.jpg" alt="IQMA" />
+    <h3>IQMA</h3>
+    <p>Operations Supervisor</p>
+  </div>
+  <div class="employee-card">
+    <img src="ika.png" alt="ATIKAH" />
+    <h3>ATIKAH</h3>
+    <p>Creative Director</p>
+  </div>
+  <div class="employee-card">
+    <img src="uzma.png" alt="UZMA" />
+    <h3>UZMA</h3>
+    <p>Client Relations Manager</p>
+  </div>
+</div>
+
+<div class="home-button-container">
+     <div class="nav-buttons">
+      <a href="officehours.html" target="abc" class="btn-nav">← Back</a>
+      <a href="employeebenefits.html" target="abc" class="btn-nav">Next →</a>
+    </div>
+  </div>  
+
+<div class="disclaimer-fixed">
+    Disclaimer: This website is not the official website of Carry N Go. This website was developed for the purpose of learning XHTML & CSS only.
+  </div>
+
+</body>
+</html>

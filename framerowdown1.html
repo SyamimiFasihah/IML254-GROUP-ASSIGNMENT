@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Home</title>
+  <style type="text/css">
+    body {
+      background-color: #f5f1ec;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+
+    .header {
+      background: linear-gradient(to bottom, #9a2e2e, #611427);
+      color: #ffffff;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 200%;
+      font-family: 'Georgia', serif;
+      letter-spacing: 2px;
+    }
+
+    .banner-container {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      background: linear-gradient(to right, #9a2e2e, #611427);
+      border-top: 4px solid #4a0f1f;
+      border-bottom: 4px solid #4a0f1f;
+    }
+
+    .animated-banner {
+      display: inline-block;
+      padding: 9px 0;
+      font-size: 90%;
+      color: #ffffff;
+      font-family: 'Trebuchet MS', sans-serif;
+      animation: slide 12s linear infinite;
+      text-align: center;
+    }
+
+    .info-box {
+      background-color: #ffffff;
+      border: 1px solid #e0dcd7;
+      width: 85%;
+      max-width: 850px;
+      margin: 10px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(97, 20, 39, 0.08);
+      text-align: center;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .info-title {
+      font-size: 115%;
+      font-weight: bold;
+      color: #2e2e2e;
+      line-height: 1.5;
+      font-family: 'Segoe UI', sans-serif;
+      animation: fadeIn 2s ease;
+    }
+
+    .info-box img {
+      width: 500px;
+      height: 170px;
+      margin: 10px auto;
+      border-radius: 16px;
+      border: 2px solid #9a2e2e;
+      box-shadow: 0 4px 8px rgba(154, 46, 46, 0.2);
+      transition: transform 0.4s ease;
+      animation: zoomIn 1.2s ease;
+    }
+
+    .info-box img:hover {
+      transform: scale(1.04);
+    }
+
+    .btn-home {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 12px 30px;
+      font-size: 90%;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      border: 2px solid #611427;
+      background-color: #ffffff;
+      color: #611427;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .btn-home:hover {
+      background-color: #611427;
+      color: #ffffff;
+    }
+
+    .disclaimer-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #eae5e0;
+      color: #555555;
+      font-size: 75%;
+      text-align: center;
+      padding: 10px 15px;
+      border-top: 1px solid #cccccc;
+      z-index: 999;
+      font-style: italic;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      0% { transform: scale(0.85); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>WELCOME TO CARRY N GO!</h1>
+  </div>
+
+  <div class="banner-container">
+    <div class="animated-banner">
+      🎒 PREMIUM BAGS FOR STYLE, FUNCTION & COMFORT – ALL IN ONE! 👜
+    </div>
+  </div>
+
+  <div class="info-box">
+    <img src="img.jpg" alt="Carry N Go Bag Collection" />
+    <p class="info-title">
+      Your go-to destination for premium, stylish, and functional bags.<br />
+      Discover our handpicked collections for students, professionals, and world travelers.
+    </p>
+  </div>
+
+<a href="group.html" target="abc" class="btn-home"> Our Group Profile</a>
+
+
+  <div class="disclaimer-fixed">
+    Disclaimer: This website is not the official website of Carry N Go. This website was developed for the purpose of learning XHTML & CSS only.
+  </div>
+
+</body>
+</html>

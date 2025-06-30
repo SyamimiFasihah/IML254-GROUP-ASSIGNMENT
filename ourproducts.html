@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Our Products</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f1ec;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #2e2e2e;
+      padding-bottom: 60px;
+    }
+
+    @keyframes fadeSlideDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInBox {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .header {
+      background: linear-gradient(to bottom, #9a2e2e, #611427);
+      color: #ffffff;
+      padding: 20px 20px;
+      text-align: center;
+      animation: fadeSlideDown 1s ease forwards;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 200%;
+      font-family: 'Georgia', serif;
+      letter-spacing: 2px;
+    }
+
+    .product-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .product-box {
+      background-color: #ffffff;
+      border: 1px solid #e0dcd7;
+      border-radius: 12px;
+      padding: 30px 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 6px 16px rgba(97, 20, 39, 0.08);
+      text-align: center;
+      animation: fadeInBox 1s ease forwards;
+    }
+
+    .product-box p {
+      font-size: 130%;
+      font-weight: bold;
+      color: #611427;
+      margin-bottom: 25px;
+      font-family: 'Garamond', serif;
+    }
+
+    .product-box img {
+      width: 250px;
+      height: 200px;
+      margin: 12px;
+      border: 2px solid #9a2e2e;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(154, 46, 46, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .product-box img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-section {
+      display: inline-block;
+      margin: 20px 15px;
+      padding: 14px 30px;
+      font-size: 100%;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      border: 2px solid #611427;
+      background-color: #ffffff;
+      color: #611427;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-section:hover {
+      background-color: #611427;
+      color: #ffffff;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .btn-nav {
+      padding: 12px 30px;
+      font-size: 90%;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      border: 2px solid #611427;
+      background-color: #ffffff;
+      color: #611427;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .btn-nav:hover {
+      background-color: #611427;
+      color: #ffffff;
+    }
+
+    .disclaimer-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #eae5e0;
+      color: #555555;
+      font-size: 75%;
+      text-align: center;
+      padding: 10px 15px;
+      border-top: 1px solid #cccccc;
+      z-index: 999;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>OUR PRODUCTS</h1>
+  </div>
+
+  <div class="product-section">
+
+    <div class="product-box">
+      <p>Backpack</p>
+      <img src="bp1.jpg" alt="Backpack 1" />
+      <img src="bp2.jpg" alt="Backpack 2" />
+      <img src="bp3.jpg" alt="Backpack 3" />
+    </div>
+
+    <div class="product-box">
+      <p>Sling Bag</p>
+      <img src="sb1.jpg" alt="Sling Bag 1" />
+      <img src="sb2.jpg" alt="Sling Bag 2" />
+    </div>
+
+    <div class="product-box">
+      <p>Tote Bag</p>
+      <img src="tb1.jpg" alt="Tote Bag 1" />
+      <img src="tb2.jpg" alt="Tote Bag 2" />
+      <img src="tb3.jpg" alt="Tote Bag 3" />
+    </div>
+
+    <div class="nav-buttons">
+      <a href="aboutus.html" target="abc" class="btn-nav">← Back</a>
+      <a href="vmo.html" target="abc" class="btn-nav">Next →</a>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="disclaimer-fixed"> 
+    Disclaimer: This website is not the official website of Carry N Go. This website was developed for the purpose of learning XHTML &amp; CSS only.
+  </div>
+
+</body>
+</html>

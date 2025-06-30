@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Feedback Forms</title>
+  <style type="text/css">
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    body {
+      background-color: #f5f1ec;
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, sans-serif;
+      padding-bottom: 60px;
+    }
+
+    .header {
+      background: linear-gradient(to bottom, #9a2e2e, #611427);
+      padding: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .header h1 {
+      font-family: Georgia, serif;
+      font-size: 200%;
+      margin: 0;
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+
+    .content-box {
+      background-color: #ffffff;
+      border: 1px solid #e0dcd7;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      box-shadow: 0 6px 14px rgba(97, 20, 39, 0.1);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .content-box p {
+      font-size: 130%;
+      color: #611427;
+      font-weight: bold;
+      margin-bottom: 15px;
+      font-family: Garamond, serif;
+      text-align: center;
+    }
+
+    form label {
+      font-weight: bold;
+      color: #2e2e2e;
+      display: block;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    form textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-family: Segoe UI, sans-serif;
+      resize: vertical;
+    }
+
+    .form-button {
+      display: block;
+      margin: 0 auto;
+      background-color: #611427;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 90%;
+      font-weight: bold;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .form-button:hover {
+      background-color: #9a2e2e;
+    }
+
+    
+    .btn-section {
+      display: inline-block;
+      margin: 20px 15px;
+      padding: 14px 30px;
+      font-size: 100%;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      border: 2px solid #611427;
+      background-color: #ffffff;
+      color: #611427;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-section:hover {
+      background-color: #611427;
+      color: #ffffff;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .btn-nav {
+      padding: 12px 30px;
+      font-size: 90%;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      border: 2px solid #611427;
+      background-color: #ffffff;
+      color: #611427;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .btn-nav:hover {
+      background-color: #611427;
+      color: #ffffff;
+    }
+
+
+    .disclaimer-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #eae5e0;
+      color: #555555;
+      font-size: 75%;
+      text-align: center;
+      padding: 10px 20px;
+      border-top: 1px solid #cccccc;
+      z-index: 999;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>FEEDBACK FORMS</h1>
+  </div>
+
+  <div class="content-box">
+    <p>We value your feedback!</p>
+    <form action="https://formspree.io/f/mdkzypyv" method="POST">
+  <input type="hidden" name="_replyto" value="anonymous@carryngo.com" />
+
+  <div>
+    <label for="like">What you like about us:</label>
+    <textarea id="like" name="like" required="required"></textarea>
+  </div>
+
+  <div>
+    <label for="dislike">What you dislike about us:</label>
+    <textarea id="dislike" name="dislike" required="required"></textarea>
+  </div>
+
+  <input type="submit" class="form-button" value="Send Feedback" />
+  </form>
+  </div>
+
+  <div class="home-button-container">
+     <div class="nav-buttons">
+      <a href="employeebenefits.html" target="abc" class="btn-nav">← Back</a>
+      <a href="customerreview.html" target="abc" class="btn-nav">Next →</a>
+    </div>
+  </div>
+
+  <div class="disclaimer-fixed">
+    Disclaimer: This website is not the official website of Carry N Go. This website was developed for the purpose of learning XHTML &amp; CSS only.
+  </div>
+
+</body>
+</html>
